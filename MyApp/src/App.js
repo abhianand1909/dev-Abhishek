@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Table from "./Component/Table"
+import Table from "./Component/Table";
+import Button from "./Component/Button";
 
 
 function App(){
@@ -31,12 +32,10 @@ function App(){
   let addData =() =>{
     setdata([value1.toUpperCase(),...arr]); 
     takevalue(value1='') 
-    console.log(arr);
   } 
   let removeData =() =>{
     arr.pop();
     setdata([...arr]);
-    console.log(arr);
   } 
   
   return (
@@ -72,9 +71,13 @@ function App(){
         }</div>
         <br />
     </div>
-    
 
-    
+    <div className="Exercise4">
+        <h3 className="E4">EXERCISE</h3>
+        <Button  buttonName={"Submit"}/>
+        <br />
+      </div>
+
     </>
     
   );

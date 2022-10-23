@@ -65,7 +65,14 @@
     color: #000000;
     font-size: 22px;
 }
-.E3
+.E3,.E4
 {
   font-size: 35px;
+}
+.Exercise4
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c2dcf3;
 }
