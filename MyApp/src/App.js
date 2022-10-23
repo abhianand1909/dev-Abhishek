@@ -21,8 +21,24 @@ function App(){
    let columns=["Name","Age"];
 
   // Exercise 3
+
+  let [arr,setdata]=useState([]);
+  let [value1,takevalue]=useState('');
+  let sendData =(elem1) =>
+  {
+    takevalue(elem1.target.value);
+  }
+  let addData =() =>{
+    setdata([value1.toUpperCase(),...arr]); 
+    takevalue(value1='') 
+    console.log(arr);
+  } 
+  let removeData =() =>{
+    arr.pop();
+    setdata([...arr]);
+    console.log(arr);
+  } 
   
- 
   return (
     <>
     
@@ -37,7 +53,30 @@ function App(){
       <h3 className="E2">EXERCISE 2</h3>
     <Table students={students} colNames={columns}/>
     </div>
+    <br />
+
+    <div className="Exercise3">
+      <h3 className="E3">EXERCISE 3</h3>
+      <input type="text" value={value1} onChange={sendData} />
+       <div>
+          <button onClick={addData}>Add</button>
+          <button onClick={removeData}>Remove</button>
+        </div>
+      <div className="Arrayreturn">
+        {arr.map((elem2)=>
+        {
+          return(
+            <div>{elem2}</div>
+          )
+        })
+        }</div>
+        <br />
+    </div>
+    
+
+    
     </>
+    
   );
 }
 export default App;
