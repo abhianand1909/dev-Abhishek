@@ -5,4 +5,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 287px;
+}
+.E2
+{
+  font-size: 35px;
+  color: #3487c6;
+  text-align: center;
+}
+.Exercise2
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabledata
+{
+    width: 50%;
+}
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid rgb(40, 39, 39);
+  padding: 8px;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3487c6;
+  color: white;
 }
