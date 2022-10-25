@@ -40,7 +40,7 @@ function App(){
   
   return (
     <>
-    
+    {/* Exercise 1 */}
     <div className="Exercise1">
        <h3> EXERCISE 1</h3>     
         <input type="text" value={value} onChange={inputvalue} />
@@ -48,12 +48,14 @@ function App(){
       <div>{display}</div>
     </div>
 
+    {/* Exercise 2 */}
     <div className="Exercise2">
       <h3 className="E2">EXERCISE 2</h3>
     <Table students={students} colNames={columns}/>
     </div>
     <br />
 
+    {/* Exercise 3 */}
     <div className="Exercise3">
       <h3 className="E3">EXERCISE 3</h3>
       <input type="text" value={value1} onChange={sendData} />
@@ -72,6 +74,7 @@ function App(){
         <br />
     </div>
 
+    {/* Exercise 4 */}
     <div className="Exercise4">
         <h3 className="E4">EXERCISE</h3>
         <Button  buttonName={"Submit"}/>
