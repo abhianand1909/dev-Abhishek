@@ -8,21 +8,20 @@ function Table({students ,colNames}){
                 <thead>
                     <tr>
                         {
-                            colNames.map((headerItems, index)=>(
-                                <th key={index}>
+                            colNames.map((headerItems)=>(
+                                <th>
                                     {headerItems}
                                     
-                                </th>
-                                
+                                </th>   
                             ))
                         }
                     </tr>
                 </thead>
                 <tbody>
-                    {Object.values(students).map((obj, index) =>(
-                        <tr key={index}>
-                            {Object.values(obj).map((value,index2)=>(
-                                <td key={index2}>{value}</td>
+                    {Object.values(students).map((obj) =>(
+                        <tr >
+                            {Object.values(obj).map((value)=>(
+                                <td >{value}</td>
                             ))}
                         </tr>
                     ))}

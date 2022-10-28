@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Table from "./Component/Table";
 import Button from "./Component/Button";
+import Table2 from "./Component/Table2";
 
 
 function App(){
@@ -33,10 +34,19 @@ function App(){
     setdata([value1.toUpperCase(),...arr]); 
     takevalue(value1='') 
   } 
-  let removeData =() =>{
-    arr.pop();
-    setdata([...arr]);
-  } 
+ const deleteElement =((name) => {
+  const newarr = arr.filter((elemnt)=>{
+    return(
+      elemnt !==name
+    )
+  });
+  setdata(newarr);
+ })
+
+  // Exercise 5
+
+  let nameArr=["Abhishek","Anand","Raj","Ram","Shyam","Tony"];
+  let columnName=["Name"];
   
   return (
     <>
@@ -61,24 +71,30 @@ function App(){
       <input type="text" value={value1} onChange={sendData} />
        <div>
           <button onClick={addData}>Add</button>
-          <button onClick={removeData}>Remove</button>
+          
         </div>
       <div className="Arrayreturn">
         {arr.map((elem2)=>
         {
           return(
-            <div>{elem2}</div>
+            <div onClick={() =>{deleteElement(elem2)}}>{elem2}</div>
           )
-        })
+        }).reverse()
         }</div>
         <br />
     </div>
 
     {/* Exercise 4 */}
     <div className="Exercise4">
-        <h3 className="E4">EXERCISE</h3>
+        <h3 className="E4">EXERCISE4</h3>
         <Button  buttonName={"Submit"}/>
         <br />
+      </div>
+
+      {/* Exercise 5 */}
+      <div className="Exercise5">
+        <h3 className="E5">Exercise 5</h3>
+        <Table2 names={nameArr} clName={columnName} />
       </div>
 
     </>
