@@ -14,7 +14,7 @@ function App(){
     getvalue(elem.target.value);
   }
   let extractvalue=() =>{
-        setvalue(display=value);
+        setvalue(value);
   }
 
   // Exercise 2
@@ -47,7 +47,20 @@ function App(){
 
   let nameArr=["Abhishek","Anand","Raj","Ram","Shyam","Tony"];
   let columnName=["Name"];
-  
+
+  // Exercise 6
+  let [length,setLength] =useState();
+  let [password ,setPassword] =useState("********");
+  let passwordLength =((e) =>{
+    setLength(e.target.value);
+    console.log(length);
+  });
+  let generatePassword =(() =>{
+    let createPass=Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2);
+    let updatePassLength=createPass.slice(0,length);
+    setPassword(updatePassLength);
+  })
+
   return (
     <>
     {/* Exercise 1 */}
@@ -95,6 +108,16 @@ function App(){
       <div className="Exercise5">
         <h3 className="E5">Exercise 5</h3>
         <Table2 names={nameArr} clName={columnName} />
+        <br />
+      </div>
+
+      {/* Exercise 6 */}
+      <div className="Exercise6">
+        <div className="E6">Exercise 6</div>
+        <div className="e6Desc">Enter length of password you want to generate</div>
+        <input type="text" onChange={passwordLength} />
+        <button onClick={generatePassword}>Generate Password</button>
+        <div>{password}</div>
       </div>
 
     </>

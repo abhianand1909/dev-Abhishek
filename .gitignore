@@ -1,2 +1,5 @@
 MyApp/node_modules
 MyApp/.vscode/launch.json
+project/node_modules
+project/package.json
+project/package-lock.json
