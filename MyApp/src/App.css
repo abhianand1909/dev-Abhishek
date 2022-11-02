@@ -85,6 +85,7 @@
 }
 .Exercise6
 {
+  
   height: 267px;
   display: flex;
   flex-direction: column;
@@ -92,14 +93,34 @@
   align-items: center;
   background: linear-gradient(102deg, #0249bb,#c1c9ed );
 }
-.E6
+.E6,.E7
 {
   font-size: 35px;
   font-weight: bolder;
 }
-.e6Desc
+.e6Desc,.e7Desc
 {
   color: white;
   font-size: 20px;
   font-weight: 500;
 }
+.Exercise7
+{
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(4deg, #193562,#ff9393 );
+}
+.colorChangeBtn
+{
+  background-color: rgb(216, 124, 6);
+  height: 32%;
+  width: 133px;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 20px;
+}
+
+

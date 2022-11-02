@@ -61,6 +61,14 @@ function App(){
     setPassword(updatePassLength);
   })
 
+  //Exercise 7
+  let [colStyle ,setStyle] =useState({backgroundColor:''});
+  let buttonClick=(() => 
+  {
+    let randomNum = Math.random().toString(16).slice(2);
+    setStyle({backgroundColor:"#" + randomNum.slice(0,6)});
+  })
+    
   return (
     <>
     {/* Exercise 1 */}
@@ -118,6 +126,14 @@ function App(){
         <input type="text" onChange={passwordLength} />
         <button onClick={generatePassword}>Generate Password</button>
         <div>{password}</div>
+      </div>
+
+      {/* Exercise 7 */}
+      <div className="Exercise7">
+        <div className="E7">Exercise 7</div>
+        <div className="e7Desc">Click me to change color</div>
+        <button className="colorChangeBtn" style={colStyle} onClick={buttonClick}>Click Me</button>
+        
       </div>
 
     </>
