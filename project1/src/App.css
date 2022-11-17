@@ -14,109 +14,86 @@
 {
   display: flex;
   width: 100%; 
-}
-.searchBar
-{
-  position: absolute;
-  transform: translate(-50% ,-50%);
-  display: flex;
-  justify-content: center;
   align-items: center;
-} 
-.searchBar input
+  justify-content: space-evenly;
+}
+.container
 {
-  background-color: aqua;
-  border: none;
-  outline: none;
-  width: 0;
-  padding: 0;
-  opacity: 0;
-  border-radius: 40px;
-  line-height: 40px;
-  font-size: 18px;
-  color: aliceblue;
+  position: fixed;
+  
+  background-color: #ffffffb0;
+  z-index: 1;
+  top: 4vw;
+  right: 6vw;
+  
+}
+.searchBox:hover .container
+{
+  width: 20vw;
+  height: 24vw;
   transition: all 0.5s;
 }
-
-.searchBar input::placeholder
-{
-  color: aliceblue;
-  font-weight: 400;
-}
-.searchBar img
-{
-  background-color: blue;
-  width: 40px;
-  height: 40px;
-  padding: 9px 10px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.searchBar:hover input
-{
-  width: 240px;
-  opacity: 1;
-  padding: 10px 20px;
-}
-.searchBar:hover img
-{
-  color: white;
-}
-
 .searchBox
-/* {
-  position: absolute;
-  transform: translate(-50% ,-50%);
+{
+ 
+  border:none;
+  border-radius: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 2vw;
 }
 .searchBox input
 {
-  background-color: aqua;
+  font-size: 1.3vw;
+  background-color: transparent;
   border: none;
   outline: none;
   width: 0;
   padding: 0;
   opacity: 0;
   border-radius: 40px;
-  line-height: 40px;
-  font-size: 18px;
-  color: aliceblue;
   transition: all 0.5s;
+  text-align: center;
 }
 .searchBox input::placeholder
 {
-  color: aliceblue;
+  color: rgba(159, 168, 177, 0.537);
   font-weight: 400;
 }
 .searchBox i 
 {
-  background-color: blue;
-  width: 40px;
-  height: 40px;
-  padding: 9px 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color:transparent;
+  border: 1px black solid;
+  padding: .26vw;
   border-radius: 50%;
   text-align: center;
-  line-height: 40px;
-  font-size: 20px;
+  font-size: 1.2vw;
   cursor: pointer;
   transition: all 0.5s;
 }
 .searchBox:hover input
 {
-  width: 240px;
+  
+  width: 20vw;
+  height: 5vh;
   opacity: 1;
-  padding: 10px 20px;
 }
 .searchBox:hover i
 {
-  color: #fff;
-} */
+  color:black; 
+  border: none;
+  font-size: 0%;
+}
+.searchBox:hover 
+{
+  border: 1px black solid;
+}
+
 /* Image Slider */
 
 .imageSliderParent
