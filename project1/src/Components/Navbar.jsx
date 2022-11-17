@@ -3,6 +3,7 @@ import HomePageDress from '../json/HomePageDress.json'
 
 
 const Navbar = () => {
+
   return (
     <>
     <div className='navbar'>
