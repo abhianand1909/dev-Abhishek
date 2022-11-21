@@ -5,6 +5,8 @@ import CustomiseDiv from './Components/CustomiseDiv';
 import Category from './Components/Category';
 import BestSellingCategory from './Components/BestSellingCategory'
 import Dresses from './Components/Dresses'
+import SignUp from './Components/SignUp'
+import LogIn from './Components/LogIn'
 
 function App() {
   const slides =[
@@ -25,6 +27,8 @@ function App() {
     <Dresses/>
    <div className='bestSellingCategoriesTitle'>SHOP OUR BESTSELLING CATEGORIES</div>
    <div className='BestSellingCategoryMain'><BestSellingCategory/></div>
+   <SignUp/>
+   <LogIn/>
     </>
   );
 }

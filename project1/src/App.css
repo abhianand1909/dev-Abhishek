@@ -19,19 +19,53 @@
 }
 .container
 {
-  position: fixed;
-  
+  position: absolute; 
   background-color: #ffffffb0;
   z-index: 1;
   top: 4vw;
   right: 6vw;
-  
-}
-.searchBox:hover .container
-{
   width: 20vw;
   height: 24vw;
-  transition: all 0.5s;
+  transition: all 0.5s;  
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.container1
+{
+  height: 0%;
+  width: 0%;
+  display: none;
+}
+.resultEachDiv
+{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.resultHover :hover
+{
+  background-color: aliceblue;
+}
+.resultEachDiv1
+{
+  width: 0%;
+  height: 0%;
+}
+.resultImage
+{
+  width:45%;
+
+}
+.resultTitle
+{
+  width: 45%;
+  text-align: center;
+  font-size: 1vw;
 }
 .searchBox
 {
@@ -42,8 +76,9 @@
   justify-content: center;
   align-items: center;
   height: 2vw;
+  background-color: rgb(0, 0, 0);
 }
-.searchBox input
+.searchBarText1
 {
   font-size: 1.3vw;
   background-color: transparent;
@@ -53,7 +88,7 @@
   padding: 0;
   opacity: 0;
   border-radius: 40px;
-  transition: all 0.5s;
+  transition: all 0.5s ;
   text-align: center;
 }
 .searchBox input::placeholder
@@ -68,31 +103,32 @@
   align-content: center;
   justify-content: center;
   background-color:transparent;
-  border: 1px black solid;
+  border: 1px rgba(0, 0, 0, 0.632) solid;
   padding: .26vw;
   border-radius: 50%;
   text-align: center;
   font-size: 1.2vw;
   cursor: pointer;
   transition: all 0.5s;
+  color: white;
 }
-.searchBox:hover input
+.searchBarText
 {
-  
+  font-size: 1.3vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  transition: all ;
+  text-align: center;
   width: 20vw;
   height: 5vh;
   opacity: 1;
+  color: white;
+  transition: all 0.5s;
 }
-.searchBox:hover i
-{
-  color:black; 
-  border: none;
-  font-size: 0%;
-}
-.searchBox:hover 
-{
-  border: 1px black solid;
-}
+
+
 
 /* Image Slider */
 
@@ -230,7 +266,9 @@ color: rgb(17 17 17 / 82%);
 font-size: 1.5vw;
 border-radius: 16px;
 background: rgb(2,0,36);
-background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgb(173 118 181 / 50%) 10%, rgb(180 125 181 / 0%) 17%, rgb(185 107 179 / 50%) 19%, rgb(191 119 187 / 0%) 21%);
+background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%,
+ rgba(255,255,255,0) 9%, rgb(173 118 181 / 50%) 10%, rgb(180 125 181 / 0%) 17%,
+ rgb(185 107 179 / 50%) 19%, rgb(191 119 187 / 0%) 21%);
 background-size: 150%;
 background-position: right;
 transition: 1s;
