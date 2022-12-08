@@ -1,0 +1,30 @@
+[
+    { "src":"./images/Collection/1.jpg", "title":"Overlap side cowl dress", "price": 1500, "category":"Fusion"},
+    { "src":"./images/Collection/2.jpg", "title":"Deep back tie up kurta palazzo", "price": 1500, "category":"Fusion"},
+    { "src":"./images/Collection/3.jpg", "title":"Jumpsuit with a dupatta Drape", "price": 1500, "category":"Fusion"},
+    { "src":"./images/Collection/4.jpg", "title":"Crop top with cowl dhoti skirt", "price": 1500, "category":"Fusion"},
+    { "src":"./images/Collection/5.jpg", "title":"Blouse with prestiched frill gown", "price": 1500, "category":"Fusion"},
+    { "src":"./images/Collection/6.jpg", "title":"Overlap neck dhoti jumpsuit", "price": 1500, "category":"Fusion"},
+    { "src":"./images/Collection/7.jpg", "title":"Overlap side cowl dress", "price": 1784, "category":"Fusion"},
+    { "src":"./images/Collection/8.jpg", "title":"Red Sindoori Suhani Raw Silk Lehenga Set", "price": 229500, "category":"Wedding"},
+    { "src":"./images/Collection/9.jpg", "title":"Green Net Embroidered Lehenga Set", "price": 59963, "category":"Wedding"},
+    { "src":"./images/Collection/10.jpg", "title":"Alethi Silk Lehenga Set", "price": 150000, "category":"Wedding"},
+    { "src":"./images/Collection/11.jpg", "title":"Brown Banaras Woven Silk Lehenga Set", "price": 149000, "category":"Wedding"},
+    { "src":"./images/Collection/12.jpg", "title":"Red Net Leaf Motif Lehenga Set", "price": 188000, "category":"Wedding"},
+    { "src":"./images/Collection/13.jpg", "title":"Grey Cotton Shimmer Chanderi Gota Embroidered Lehenga Set", "price": 75470, "category":"Wedding"},
+    { "src":"./images/Collection/14.jpg", "title":"Pink Zardozi Embroidered Lehenga Set", "price": 148000, "category":"Wedding"},
+    { "src":"./images/Collection/15.jpg", "title":"Pink Organza La Reine Embroidered Lehenga Set", "price": 235000, "category":"Wedding"},
+    { "src":"./images/Collection/16.jpg", "title":"Black Viscose Crepe Printed Co-Ord Set", "price": 12320, "category":"Luxury Pret"},
+    { "src":"./images/Collection/17.jpg", "title":"Black Silk Draped Saree Set", "price": 45000, "category":"Luxury Pret"},
+    { "src":"./images/Collection/18.jpg", "title":"Powder Blue Printed Lehenga Set", "price": 44800, "category":"Luxury Pret"},
+    { "src":"./images/Collection/19.jpg", "title":"Blue Crepe Woven Long Kurta Set", "price": 9599, "category":"Luxury Pret"},
+    { "src":"./images/Collection/20.jpg", "title":"Yellow Crepe Asymmetrical Kurta Set", "price": 9599, "category":"Luxury Pret"},
+    { "src":"./images/Collection/21.jpg", "title":"Black Silk Pants", "price": 8900, "category":"Luxury Pret"},
+    { "src":"./images/Collection/22.jpg", "title":"Off-White Cotton Embroidered Anarkali Set", "price": 6995, "category":"Luxury Pret"},
+    { "src":"./images/Collection/23.jpg", "title":"Black Wool Cape", "price": 11500, "category":"Luxury Pret"}
+
+
+
+
+    
+]
