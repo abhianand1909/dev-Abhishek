@@ -1,0 +1,432 @@
+.logo
+{
+  width: 13%;
+}  
+.logoDiv
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 70%;
+} 
+.navbar
+{
+  display: flex;
+  width: 100%; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container
+{
+  position: absolute; 
+  background-color: #ffffffb0;
+  z-index: 1;
+  top: 4vw;
+  right: 6vw;
+  width: 20vw;
+  height: 24vw;
+  transition: all 0.5s;  
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.container1
+{
+  height: 0%;
+  width: 0%;
+  display: none;
+}
+.resultEachDiv
+{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.resultHover :hover
+{
+  background-color: aliceblue;
+}
+.resultEachDiv1
+{
+  width: 0%;
+  height: 0%;
+}
+.resultImage
+{
+  width:45%;
+
+}
+.resultTitle
+{
+  width: 45%;
+  text-align: center;
+  font-size: 1vw;
+}
+.searchBox
+{
+ 
+  border:none;
+  border-radius: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vw;
+  background-color: rgb(0, 0, 0);
+}
+.searchBarText1
+{
+  font-size: 1.3vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  border-radius: 40px;
+  transition: all 0.5s ;
+  text-align: center;
+}
+.searchBox input::placeholder
+{
+  color: rgba(159, 168, 177, 0.537);
+  font-weight: 400;
+}
+.searchBox i 
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color:transparent;
+  border: 1px rgba(0, 0, 0, 0.632) solid;
+  padding: .26vw;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: white;
+}
+.searchBarText
+{
+  font-size: 1.3vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  transition: all ;
+  text-align: center;
+  width: 20vw;
+  height: 5vh;
+  opacity: 1;
+  color: white;
+  transition: all 0.5s;
+}
+
+
+
+/* Image Slider */
+
+.imageSliderParent
+{
+  width: 100%;
+  max-height: 900px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.slideStyle
+{
+  width: 100%;
+  padding-top: 0%;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  
+} 
+.slider
+{
+  animation:10s slide forwards;
+}
+.sliderStyle
+{
+  padding-top: 0%;
+  position: relative;
+  
+}
+@keyframes slide{
+  0%{
+    right:0%;
+  }
+  10%{
+    right:0%;
+  }20%{
+    right:100%;
+  }30%{
+    right:100%;
+  }40%{
+    right:200%;
+  }50%{
+    right:200%;
+  }55%{
+    right:300%;
+  }65%{
+    right:300%;
+  }74%{
+    right:200%;
+  }75%{
+    right:100%;
+  }85%{
+    right:100%;
+  }90%{
+    right:0%;
+  }100%{
+    right:0%;
+  }
+}
+ 
+.leftArrowStyle
+{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 28px;
+  font-size: 45px;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+} 
+.rightArrowStyle
+{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 28px;
+  font-size: 45px;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+} 
+.dotContainer
+{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+.dotDiv
+{
+  margin: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+/* Customised Div*/
+
+.customisedStyle
+{
+  background-image: url(../public/Images/Customise/background-g6af84ee23_1920\ \(1\).jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+.customisedStyleDes
+{
+  text-align: center;
+  font-weight: 700;
+  font-family: Avanta Garde;
+  font-size: 2.5vw;
+  color: black;
+}
+.customisedStyleButton,.homePageDressButton
+{
+  border-radius: 28px;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.customisedStyleButton ,.homePageDressButton
+{
+width: 10vw;
+height: 3vw;
+cursor: pointer;
+border: none;
+font-family: Avanta Garde;
+color: rgb(17 17 17 / 82%);
+font-size: 1.5vw;
+border-radius: 16px;
+background: rgb(2,0,36);
+background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%,
+ rgba(255,255,255,0) 9%, rgb(173 118 181 / 50%) 10%, rgb(180 125 181 / 0%) 17%,
+ rgb(185 107 179 / 50%) 19%, rgb(191 119 187 / 0%) 21%);
+background-size: 150%;
+background-position: right;
+transition: 1s;
+}
+.customisedStyleButton:hover ,.homePageDressButton:hover
+{
+background-position: left;
+color: black;
+box-shadow: inset 0px 3px 5px rgb(5, 5, 5), 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+.customisedStyleButton:focus {
+outline: none;
+}
+
+/* Category */
+.categoryDiv
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: Avanta Garde;
+  color: WHITE;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.categoryImage
+{
+  width: 100%;
+  border-radius: 15px;
+  padding-top: 0%;
+}
+.categoryEachDiv
+{
+  position: relative;
+  width: 32%;
+  cursor: pointer;
+}
+.categoryDesc
+{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center; 
+  transition: 0.8s;
+  opacity: 0;
+  width: 100%;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+.categoryEachDiv:hover>.categoryDesc
+{
+  bottom: 30px;
+  opacity: 100%;
+}
+.categoryTitle
+{
+  font-size: 4vw;
+  position: absolute;
+  bottom: 66px;
+  width: 100%;
+  text-align: center;
+}
+
+.bestSellingCategoriesTitle
+{
+      text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: Avanta Garde;
+    margin-bottom: 35px;
+}
+
+.BestSellingCategory
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.BestSellingCategoryEachDiv
+{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 415px;
+  cursor: pointer;
+  position: relative;
+}
+.BestSellingCategoryImage
+{
+  width: 95%;
+  padding-top: 0;
+}
+.BestSellingCategoryHeading
+{
+  position: absolute;
+  color: white;
+  font-size: 3.5vw;
+  bottom: 20px;
+  font-family: Avanta Garde;
+
+}
+
+/* Dresses */
+
+.homePageDressHeadingDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePageDressHeading
+{
+  font-size: 2vw;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-family: Avanta Garde;
+
+}
+.homePageDressButton
+{
+  margin-bottom: 10px;
+}
+
+.homePageDressDetail
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.homePageDressEachDiv
+{
+  width: 23%;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Avanta Garde;
+  cursor: pointer;
+
+}
+.homePageDressImage
+{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.homePageDressTitle
+{
+  text-align: center;
+  font-size: 1.2vw;
+}
+.homePageDressPrice
+{
+  text-align: center;
+  font-size: 1.2vw;
+}

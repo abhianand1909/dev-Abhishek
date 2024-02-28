@@ -1,8 +1,126 @@
-.hello
+.Exercise1
 {
   background-color: blanchedalmond;
-  font-size: 30px;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 287px;
+}
+.E2
+{
+  font-size: 35px;
+  color: #3487c6;
+  text-align: center;
+}
+.Exercise2
+{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.tabledata,.table2data
+{
+    width: 50%;
+}
+.table ,.table2
+{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th, .table2 td,.table2 th {
+  border: 1px solid rgb(40, 39, 39);
+  padding: 8px;
+  text-align: center;
+}
+
+.table th ,.table2 th
+{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #3487c6;
+  color: white;
+}
+.Exercise3
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cadetblue;
+}
+.button
+{
+  background-color: lightgray;
+}
+.Arrayreturn
+{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid darkgray;
+    width: 100%;
+    font-weight: bold;
+    color: #000000;
+    font-size: 22px;
+}
+.E3,.E4,.E5
+{
+  font-size: 35px;
+}
+.Exercise4, .Exercise5
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c2dcf3;
+}
+.Exercise5
+{
+  background-color: #c9d2f1;
+}
+.Exercise6
+{
+  
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(102deg, #0249bb,#c1c9ed );
+}
+.E6,.E7
+{
+  font-size: 35px;
+  font-weight: bolder;
+}
+.e6Desc,.e7Desc
+{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Exercise7
+{
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(4deg, #193562,#ff9393 );
+}
+.colorChangeBtn
+{
+  background-color: rgb(216, 124, 6);
+  height: 32%;
+  width: 133px;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 20px;
+}
+
+
